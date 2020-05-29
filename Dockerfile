@@ -4,7 +4,7 @@ FROM ubuntu:latest
 # Step:2 Nginx install
 RUN apt-get update && apt-get install -y -q nginx
 
-# Step:3 file copy (import './')
+# Step:3 file copy (important './')
 COPY ./index.html /usr/share/nginx/html/
 
 # container expose port# 80
